@@ -1,25 +1,100 @@
-@media (max-width: 900px) {
+/* ===========================================
+   RESPONSIVE WEBSITE
+=========================================== */
+
+@media screen and (max-width: 992px) {
   .detail-body {
     grid-template-columns: 1fr;
+
+    gap: 40px;
   }
 
-  .info-card {
-    position: relative;
-
-    top: 0;
+  .detail-right {
+    order: -1;
   }
 
   .gallery {
     grid-template-columns: repeat(2, 1fr);
   }
-}
-@media (max-width: 768px) {
-  .umkm-grid {
+
+  .wisata-item {
+    grid-template-columns: 1fr;
+  }
+
+  .umkm-item {
     grid-template-columns: 1fr;
   }
 }
-@media (max-width: 900px) {
-  .umkm-grid {
+@media screen and (max-width: 768px) {
+  /* HERO */
+
+  .hero {
+    height: 75vh;
+  }
+
+  .hero-content h1 {
+    font-size: 40px;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+  }
+
+  /* DETAIL */
+
+  .detail-hero {
+    width: 92%;
+
+    height: 250px;
+
+    margin-top: 90px;
+  }
+
+  .detail-overlay {
+    padding: 25px;
+  }
+
+  .detail-overlay h1 {
+    font-size: 32px;
+  }
+
+  .detail-body {
+    padding: 20px;
+  }
+
+  /* GALERI */
+
+  .gallery {
     grid-template-columns: 1fr;
+  }
+
+  .gallery img {
+    height: 180px;
+  }
+
+  /* FASILITAS */
+
+  .fasilitas {
+    grid-template-columns: 1fr;
+  }
+
+  /* KARTU WISATA */
+
+  .wisata-item {
+    padding: 20px;
+  }
+
+  .wisata-image img {
+    height: 220px;
+  }
+
+  /* UMKM */
+
+  .umkm-item {
+    padding: 20px;
+  }
+
+  .umkm-image img {
+    height: 220px;
   }
 }
