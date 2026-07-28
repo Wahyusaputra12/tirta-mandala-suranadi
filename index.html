@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Peta Digital Desa Suranadi</title>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+</body>
+      <header id="header">
+        <!-- ================= NAVBAR ================= -->
+
+        <nav class="navbar">
+          <div class="logo">
+            <img src="images/logo.png" alt="Logo" />
+
+            <div>
+              <h2>TIRTA MANDALA SURANADI</h2>
+
+              <p>Desa Suranadi</p>
+            </div>
+          </div>
+
+          <ul>
+            <li><a href="#">Beranda</a></li>
+
+            <li><a href="#tentang">Tentang</a></li>
+
+            <li><a href="#wisata">Wisata</a></li>
+
+            <li><a href="#umkm">UMKM</a></li>
+
+            <li><a href="#kontak">Kontak</a></li>
+          </ul>
+        </nav>
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="beranda">
+
+    <!-- Background Video -->
+    <video class="hero-video" autoplay muted loop playsinline>
+    <source src="images/video/hero.mp4" type="video/mp4">
+</video>
+
+    <!-- Overlay -->
+    <div class="hero-overlay"></div>
+
+    <!-- Isi Hero -->
+    <div class="hero-content">
+
+        <h3>Selamat Datang di</h3>
+
+        <h1>Desa Wisata Suranadi</h1>
+
+        <p>
+            Jelajahi keindahan wisata alam,
+            wisata religi,
+            budaya,
+            dan UMKM Desa Suranadi.
+        </p>
+
+        <a href="#wisata" class="btn-primary">
+            Jelajahi Wisata
+        </a>
+
+    </div>
+
+</section>
+        <!-- ================= TENTANG ================= -->
+
+        <section class="about" id="tentang">
+            <div class="about-image">
+              <img
+                src="images/peta-desa.png"
+                alt="Peta Digital Desa Suranadi"
+              />
+            </div>
+
+            <div class="about-content">
+              <span class="subtitle">Tentang Desa</span>
+
+              <h2>Desa Wisata Suranadi</h2>
+
+              <p>
+                Desa Suranadi merupakan salah satu desa wisata di Kecamatan
+                Narmada, Kabupaten Lombok Barat, Provinsi Nusa Tenggara Barat.
+                Desa ini memiliki potensi wisata alam, wisata religi, serta UMKM
+                lokal yang menjadi daya tarik wisatawan.
+              </p>
+
+              <p>
+                Website Peta Digital Desa Suranadi dibuat oleh mahasiswa KKN-PPM
+                43 Universitas Islam Al-Azhar Mataram sebagai media informasi
+                digital yang memudahkan masyarakat dan wisatawan dalam menemukan
+                lokasi objek wisata, UMKM, serta informasi penting lainnya.
+              </p>
+
+              <div class="about-info">
+                <div class="info-item">
+                  <i class="fa-solid fa-location-dot"></i>
+
+                  <span>Kecamatan Narmada, Lombok Barat</span>
+                </div>
+
+                <div class="info-item">
+                  <i class="fa-solid fa-tree"></i>
+
+                  <span>9 Destinasi Wisata</span>
+                </div>
+
+                <div class="info-item">
+                  <i class="fa-solid fa-store"></i>
+
+                  <span>1 UMKM Unggulan</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        <!-- ================= STATISTIK ================= -->
+
+<section class="statistik">
+
+    <div class="box">
+        <h2>9</h2>
+        <p>Destinasi Wisata</p>
+    </div>
+
+    <div class="box">
+        <h2>1</h2>
+        <p>UMKM</p>
+    </div>
+
+    <div class="box">
+        <h2>24 Jam</h2>
+        <p>Akses Informasi</p>
+    </div>
+
+</section>
+
+
+<!-- ================= WISATA ================= -->
+
+
+<section class="wisata-home" id="wisata">
+
+    <div class="section-title">
+
+        <h2>Destinasi Wisata</h2>
+
+        <p>
+            Jelajahi destinasi wisata terbaik yang ada di Desa Suranadi.
+        </p>
+
+    </div>
+
+    <div id="wisataContainer"></div>
+
+</section>
+
+    <!-- ================= UMKM ================= -->
+
+
+<section class="umkm-home" id="umkm">
+
+    <div class="section-title">
+
+        <h2>UMKM Unggulan</h2>
+
+        <p>
+
+            Produk unggulan Desa Suranadi yang menjadi oleh-oleh khas wisatawan.
+
+        </p>
+
+    </div>
+
+    <div id="umkmContainer" class="umkm-grid">
+
+    </div>
+
+</section>
+      </main>
+
+     <footer>
+    <p>© 2026 KKN-PPM 43 Universitas Islam Al-Azhar Mataram</p>
+</footer>
+
+<!-- Tombol Scroll ke Atas -->
+<button id="toTop">
+    <a href="#" class="back-to-top" title="Kembali ke Atas">
+
+    <i class="fas fa-arrow-up"></i>
+
+</a>
+</button>
+
+<!-- Javascript -->
+<script src="js/wisata.js"></script>
+<script src="js/script.js"></script>
+<script src="js/umkm.js"></script>
+<script src="js/umkm-script.js"></script>
+
+</body>
+</html>

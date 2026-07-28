@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Detail UMKM</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="images/logo.png" alt="Logo" />
+
+          <div>
+            <h2>TIRTA MANDALA SURANADI</h2>
+
+            <span>Desa Wisata Suranadi</span>
+          </div>
+        </div>
+
+        <ul class="nav-menu">
+          <li>
+            <a href="index.html"> Beranda </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="detail-hero">
+      <img id="umkmImage" />
+
+      <div class="detail-overlay">
+        <span class="kategori" id="umkmKategori"></span>
+
+        <h1 id="umkmNama"></h1>
+      </div>
+    </section>
+
+    <section class="detail-body">
+      <div class="detail-left">
+        <h2>Tentang UMKM</h2>
+
+        <p id="umkmDeskripsi"></p>
+
+        <h2>Galeri Produk</h2>
+
+        <div class="gallery" id="galleryContainer"></div>
+      </div>
+
+      <div class="detail-right">
+        <div class="info-card">
+          <h3>Informasi</h3>
+
+          <p>📍 <span id="umkmAlamat"></span></p>
+
+          <p>📞 <span id="umkmWA"></span></p>
+
+          <div class="detail-button">
+            <a href="index.html#umkm" class="btn-back"> ← Kembali </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/umkm.js"></script>
+
+    <script src="js/umkm-detail.js"></script>
+  </body>
+</html>
