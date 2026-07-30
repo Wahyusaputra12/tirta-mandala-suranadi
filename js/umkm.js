@@ -27,45 +27,45 @@ const umkm = [
   {
     id: 2,
 
-    nama: "Dodol Melati",
+    nama: "Dodol Dofira",
 
     kategori: "UMKM Makanan",
 
-    gambar: "images/umkm/dodol-melati/utama.jpeg",
+    gambar: "images/umkm/dodol-dofira/utama.jpeg",
 
     galeri: [
-      "images/umkm/dodol-melati/1.jpeg",
-      "images/umkm/dodol-melati/2.jpeg",
-      "images/umkm/dodol-melati/3.jpeg",
+      "images/umkm/dodol-dofira/1.jpeg",
+      "images/umkm/dodol-dofira/2.jpeg",
+      "images/umkm/dodol-dofira/3.jpeg",
     ],
 
     deskripsi:
-      "Dodol Melati merupakan dodol khas Suranadi dengan rasa yang autentik dan telah menjadi oleh-oleh favorit wisatawan.",
+      "Dodol Dofira merupakan dodol khas Suranadi dengan rasa yang autentik dan telah menjadi oleh-oleh favorit wisatawan.",
 
     alamat: "Desa Suranadi, Kecamatan Narmada",
 
     produk: "Oleh-Oleh Khas",
 
-    maps: "https://maps.google.com/...",
+    maps: "https://maps.app.goo.gl/7z1UnzAb7WLBVNtS7",
   },
 
   {
     id: 3,
 
-    nama: "Komak Beracun",
+    nama: "Warna Sari",
 
     kategori: "UMKM Kuliner",
 
-    gambar: "images/umkm/komak-beracun/utama.jpeg",
+    gambar: "images/umkm/warna-sari/utama.jpeg",
 
     galeri: [
-      "images/umkm/komak-beracun/1.jpeg",
-      "images/umkm/komak-beracun/2.jpeg",
-      "images/umkm/komak-beracun/3.jpeg",
+      "images/umkm/warna-sari/1.jpeg",
+      "images/umkm/warna-sari/2.jpeg",
+      "images/umkm/warna-sari/3.jpeg",
     ],
 
     deskripsi:
-      "Komak Beracun merupakan kuliner khas Lombok yang memiliki cita rasa pedas dan gurih dengan bahan utama kacang komak.",
+      "warna-sari merupakan oleh-oleh khas Lombok yang memiliki cita rasa pedas dan gurih dengan bahan utama kacang komak.",
 
     alamat: "Desa Suranadi, Kecamatan Narmada",
 
