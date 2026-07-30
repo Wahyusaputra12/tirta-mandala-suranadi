@@ -1,146 +1,377 @@
-/* ===========================================
-   RESPONSIVE WEBSITE
-=========================================== */
+/* ======================================================
+   RESPONSIVE - TIRTA MANDALA SURANADI
+   ====================================================== */
+
+/* ===========================
+TABLET
+=========================== */
 
 @media screen and (max-width: 992px) {
+  .navbar {
+    padding: 18px 30px;
+  }
+
+  .logo img {
+    width: 55px;
+
+    height: 55px;
+  }
+
+  .logo h2 {
+    font-size: 22px;
+  }
+
+  .navbar ul {
+    gap: 18px;
+  }
+
+  .hero-content h1 {
+    font-size: 58px;
+  }
+
+  .hero-content h3 {
+    font-size: 28px;
+  }
+
+  .hero-content p {
+    font-size: 20px;
+
+    max-width: 650px;
+  }
+
+  .about {
+    flex-direction: column;
+
+    gap: 50px;
+
+    padding: 80px 40px;
+  }
+
+  .statistik {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card {
+    grid-template-columns: 1fr;
+  }
+
+  .card img {
+    width: 100%;
+
+    height: 300px;
+  }
+
+  .umkm-grid {
+    grid-template-columns: 1fr;
+  }
+
   .detail-body {
     grid-template-columns: 1fr;
 
-    gap: 40px;
-  }
-
-  .detail-right {
-    order: -1;
+    padding: 30px;
   }
 
   .gallery {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .wisata-item {
-    grid-template-columns: 1fr;
+  .fasilitas {
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  .umkm-item {
-    grid-template-columns: 1fr;
+  .detail-right {
+    order: -1;
   }
 }
+
+/* ===========================
+MOBILE
+=========================== */
+
 @media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  /* NAVBAR */
+
+  .navbar {
+    padding: 15px 18px;
+
+    height: 75px;
+  }
+
+  .logo {
+    gap: 12px;
+  }
+
+  .logo img {
+    width: 45px;
+
+    height: 45px;
+  }
+
+  .logo h2 {
+    font-size: 18px;
+  }
+
+  .logo p {
+    font-size: 12px;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+
   /* HERO */
 
   .hero {
-    height: 75vh;
+    height: 70vh;
+  }
+
+  .hero-content {
+    padding: 20px;
+  }
+
+  .hero-content h3 {
+    font-size: 24px;
   }
 
   .hero-content h1 {
-    font-size: 40px;
+    font-size: 42px;
+
+    line-height: 50px;
+
+    margin-bottom: 15px;
   }
 
   .hero-content p {
-    font-size: 18px;
+    font-size: 17px;
+
+    line-height: 30px;
+
+    margin-bottom: 30px;
+  }
+
+  .btn-primary {
+    padding: 14px 35px;
+
+    font-size: 16px;
+  }
+
+  /* ABOUT */
+
+  .about {
+    padding: 70px 25px;
+  }
+
+  .about-content h2 {
+    font-size: 36px;
+  }
+
+  .about-content p {
+    font-size: 16px;
+
+    line-height: 30px;
+  }
+
+  /* STATISTIK */
+
+  .statistik {
+    grid-template-columns: 1fr;
+
+    padding: 60px 25px;
+  }
+
+  .box h2 {
+    font-size: 42px;
+  }
+
+  /* WISATA */
+
+  .card {
+    padding: 18px;
+
+    gap: 20px;
+  }
+
+  .card img {
+    height: 230px;
+  }
+
+  .card-body h3 {
+    font-size: 24px;
+  }
+
+  .card-body p {
+    font-size: 15px;
+
+    line-height: 28px;
+  }
+
+  .card-button {
+    flex-direction: column;
+  }
+
+  /* UMKM */
+
+  .umkm-home {
+    padding: 70px 25px;
+  }
+
+  .umkm-content {
+    padding: 20px;
+  }
+
+  .umkm-content h3 {
+    font-size: 24px;
   }
 
   /* DETAIL */
 
   .detail-hero {
-    width: 92%;
+    height: 240px;
 
-    height: 250px;
+    width: 94%;
 
-    margin-top: 90px;
+    margin-top: 100px;
+
+    border-radius: 20px;
   }
 
-  .detail-overlay {
-    padding: 25px;
-  }
-
-  .detail-overlay h1 {
-    font-size: 32px;
+  .detail-title h1 {
+    font-size: 34px;
   }
 
   .detail-body {
-    padding: 20px;
+    padding: 25px;
+
+    gap: 40px;
   }
 
-  /* GALERI */
+  .detail-left h2 {
+    font-size: 30px;
+  }
+
+  .detail-left p {
+    font-size: 16px;
+
+    line-height: 30px;
+  }
 
   .gallery {
     grid-template-columns: 1fr;
+
+    gap: 18px;
   }
 
-  .gallery img {
+  .gallery-img {
     height: 180px;
   }
-
-  /* FASILITAS */
 
   .fasilitas {
     grid-template-columns: 1fr;
   }
 
-  /* KARTU WISATA */
+  .fasilitas div {
+    font-size: 18px;
 
-  .wisata-item {
-    padding: 20px;
+    padding: 18px;
   }
 
-  .wisata-image img {
-    height: 220px;
+  /* BUTTON */
+
+  .btn-back {
+    font-size: 16px;
+
+    padding: 14px;
   }
 
-  /* UMKM */
+  /* FOOTER */
 
-  .umkm-item {
-    padding: 20px;
+  footer {
+    padding: 25px;
+
+    text-align: center;
+
+    font-size: 14px;
   }
 
-  .umkm-image img {
-    height: 220px;
+  /* TO TOP */
+
+  .back-to-top {
+    width: 50px;
+
+    height: 50px;
+
+    right: 20px;
+
+    bottom: 20px;
+
+    font-size: 20px;
   }
 }
+
+/* ===========================
+SMALL PHONE
+=========================== */
+
 @media screen and (max-width: 480px) {
+  .hero {
+    height: 65vh;
+  }
+
+  .hero-content h3 {
+    font-size: 20px;
+  }
+
   .hero-content h1 {
-    font-size: 30px;
+    font-size: 34px;
+
+    line-height: 42px;
   }
 
   .hero-content p {
+    font-size: 15px;
+
+    line-height: 28px;
+  }
+
+  .btn-primary {
+    width: 100%;
+
+    max-width: 260px;
+  }
+
+  .logo h2 {
     font-size: 16px;
   }
 
-  .btn {
-    width: 100%;
-
-    text-align: center;
+  .logo p {
+    font-size: 11px;
   }
 
-  .detail-overlay h1 {
-    font-size: 26px;
-  }
-
-  .detail-left h2 {
-    font-size: 28px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .hero-content h1 {
+  .about-content h2 {
     font-size: 30px;
   }
 
-  .hero-content p {
-    font-size: 16px;
+  .card img {
+    height: 210px;
   }
 
-  .btn {
-    width: 100%;
-
-    text-align: center;
-  }
-
-  .detail-overlay h1 {
-    font-size: 26px;
-  }
-
-  .detail-left h2 {
+  .detail-title h1 {
     font-size: 28px;
+  }
+
+  .detail-hero {
+    height: 220px;
+  }
+
+  .back-to-top {
+    width: 45px;
+
+    height: 45px;
+
+    font-size: 18px;
   }
 }
