@@ -160,4 +160,20 @@ const wisata = [
     deskripsi:
       "Pura bersejarah yang menjadi ikon Desa Suranadi dan sering dikunjungi wisatawan maupun umat Hindu.",
   },
+  {
+    id: 10,
+    nama: "Kolam Rhaden",
+    kategori: "Wisata Religi",
+    gambar: "images/wisata/rhaden/utama.jpeg",
+    galeri: [
+      "images/wisata/rhaden/1.jpeg",
+      "images/wisata/rhaden/2.jpeg",
+      "images/wisata/rhaden/3.jpeg",
+    ],
+    alamat: "Desa Suranadi, Kecamatan Narmada, Kabupaten Lombok Barat",
+    jam: "08.00 - 18.00 WITA",
+    tiket: "Rp10.000",
+    maps: "https://maps.app.goo.gl/bAr7iJVKBMUews549",
+    deskripsi: "Pemandian alami dengan air pegunungan yang jernih dan sejuk.",
+  },
 ];

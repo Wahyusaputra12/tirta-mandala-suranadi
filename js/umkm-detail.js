@@ -1,19 +1,13 @@
-// ===============================
-// DETAIL UMKM
-// ===============================
-
 const params = new URLSearchParams(window.location.search);
 
 const id = Number(params.get("id"));
 
-const item = umkm.find((data) => data.id === id);
+const item = umkm.find((u) => u.id === id);
 
 if (item) {
   document.getElementById("umkmImage").src = item.gambar;
 
-  document.getElementById("umkmNama").textContent = item.nama;
-
-  document.getElementById("umkmKategori").textContent = item.kategori;
+  document.getElementById("umkmTitle").textContent = item.nama;
 
   document.getElementById("umkmDeskripsi").textContent = item.deskripsi;
 
@@ -21,27 +15,31 @@ if (item) {
 
   document.getElementById("umkmWA").textContent = item.whatsapp;
 
-  const galleryContainer = document.getElementById("galleryContainer");
+  const gallery = document.getElementById("galleryContainer");
 
-  galleryContainer.innerHTML = "";
+  gallery.innerHTML = "";
 
   item.galeri.forEach((foto, index) => {
-    galleryContainer.innerHTML += `
-        <img
-            src="${foto}"
-            class="gallery-img ${index === 0 ? "active" : ""}"
-            onclick="gantiFoto('${foto}', this)"
-            alt="${item.nama}">
-    `;
+    const img = document.createElement("img");
+
+    img.src = foto;
+
+    img.className = "gallery-img";
+
+    if (index === 0) {
+      img.classList.add("active");
+    }
+
+    img.onclick = function () {
+      document.getElementById("umkmImage").src = foto;
+
+      document
+        .querySelectorAll(".gallery-img")
+        .forEach((i) => i.classList.remove("active"));
+
+      img.classList.add("active");
+    };
+
+    gallery.appendChild(img);
   });
-}
-
-function gantiFoto(foto, element) {
-  document.getElementById("detailImage").src = foto;
-
-  document.querySelectorAll(".gallery-img").forEach((img) => {
-    img.classList.remove("active");
-  });
-
-  element.classList.add("active");
 }

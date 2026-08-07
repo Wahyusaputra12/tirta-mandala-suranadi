@@ -71,26 +71,26 @@ const umkm = [
 
     produk: "Kuliner Khas",
 
-    maps: "https://maps.google.com/...",
+    maps: "https://maps.app.goo.gl/u5Wtco7CjxZRxDi99",
   },
 
   {
     id: 4,
 
-    nama: "Tempani",
+    nama: "Madu Trigona",
 
-    kategori: "UMKM Kerajinan",
+    kategori: "UMKM",
 
-    gambar: "images/umkm/tempani/utama.jpeg",
+    gambar: "images/umkm/madu-trigona/utama.jpeg",
 
     galeri: [
-      "images/umkm/tempani/1.jpeg",
-      "images/umkm/tempani/2.jpeg",
-      "images/umkm/tempani/3.jpeg",
+      "images/umkm/madu-trigona/1.jpeg",
+      "images/umkm/madu-trigona/2.jpeg",
+      "images/umkm/madu-trigona/3.jpeg",
     ],
 
     deskripsi:
-      "Tempani merupakan salah satu produk unggulan Desa Suranadi yang dihasilkan oleh pelaku UMKM lokal dengan kualitas yang baik.",
+      "Madu trigona merupakan salah satu produk unggulan Desa Suranadi yang dihasilkan oleh pelaku UMKM lokal dengan kualitas yang baik.",
 
     alamat: "Desa Suranadi, Kecamatan Narmada",
 

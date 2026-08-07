@@ -9,21 +9,27 @@ const id = parseInt(params.get("id"));
 // Cari data wisata berdasarkan id
 const item = wisata.find((w) => w.id === id);
 
-const gallery = document.getElementById("galleryContainer");
+const galleryContainer = document.getElementById("galleryContainer");
 
-gallery.innerHTML = "";
+galleryContainer.innerHTML = "";
 
-if (item.galeri) {
-  item.galeri.forEach((foto) => {
-    gallery.innerHTML += `
+item.galeri.forEach((foto, index) => {
+  const img = document.createElement("img");
 
-            <img src="${foto}"
-                 alt="${item.nama}"
-                 class="gallery-img">
+  img.src = foto;
 
-        `;
-  });
-}
+  img.className = "gallery-img";
+
+  if (index === 0) {
+    img.classList.add("active");
+  }
+
+  img.onclick = () => {
+    gantiFoto(foto, img);
+  };
+
+  galleryContainer.appendChild(img);
+});
 
 // Jika data ditemukan
 if (item) {
@@ -115,4 +121,21 @@ else {
         </section>
 
     `;
+}
+function gantiFoto(foto, element) {
+  const fotoUtama = document.getElementById("detailImage");
+
+  fotoUtama.style.opacity = "0";
+
+  setTimeout(() => {
+    fotoUtama.src = foto;
+
+    fotoUtama.style.opacity = "1";
+  }, 200);
+
+  document.querySelectorAll(".gallery-img").forEach((img) => {
+    img.classList.remove("active");
+  });
+
+  element.classList.add("active");
 }

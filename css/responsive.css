@@ -88,104 +88,59 @@ TABLET
 MOBILE
 =========================== */
 
-@media screen and (max-width: 768px) {
-  body {
-    overflow-x: hidden;
-  }
+@media screen and (max-width:480px){
 
-  /* NAVBAR */
+.hero h1{
 
-  .navbar {
-    padding: 15px 18px;
+    font-size:32px;
 
-    height: 75px;
-  }
+}
 
-  .logo {
-    gap: 12px;
-  }
+.hero p{
 
-  .logo img {
-    width: 45px;
+    font-size:15px;
 
-    height: 45px;
-  }
+}
 
-  .logo h2 {
-    font-size: 18px;
-  }
+.logo img{
 
-  .logo p {
-    font-size: 12px;
-  }
+    width:45px;
 
-  .navbar ul {
-    display: none;
-  }
+    height:45px;
 
-  /* HERO */
+}
 
-  .hero {
-    height: 70vh;
-  }
+.logo h1{
 
-  .hero-content {
-    padding: 20px;
-  }
+    font-size:20px;
 
-  .hero-content h3 {
-    font-size: 24px;
-  }
+}
 
-  .hero-content h1 {
-    font-size: 42px;
+.gallery{
 
-    line-height: 50px;
+    grid-template-columns:1fr;
 
-    margin-bottom: 15px;
-  }
+}
 
-  .hero-content p {
-    font-size: 17px;
+.gallery-img{
 
-    line-height: 30px;
+    height:170px;
 
-    margin-bottom: 30px;
-  }
+}
 
-  .btn-primary {
-    padding: 14px 35px;
+.detail-title h1{
 
-    font-size: 16px;
-  }
+    font-size:28px;
 
-  /* ABOUT */
+}
 
-  .about {
-    padding: 70px 25px;
-  }
+.info-card{
 
-  .about-content h2 {
-    font-size: 36px;
-  }
+    padding:25px;
 
-  .about-content p {
-    font-size: 16px;
+}
 
-    line-height: 30px;
-  }
-
-  /* STATISTIK */
-
-  .statistik {
-    grid-template-columns: 1fr;
-
-    padding: 60px 25px;
-  }
-
-  .box h2 {
-    font-size: 42px;
-  }
+}
 
   /* WISATA */
 
@@ -373,5 +328,34 @@ SMALL PHONE
     height: 45px;
 
     font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  .gallery {
+    justify-content: center;
+  }
+
+  .gallery-img {
+    width: 95px;
+
+    height: 70px;
+  }
+}
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery-img {
+    height: 130px;
+  }
+}
+@media (max-width: 480px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-img {
+    height: 180px;
   }
 }
